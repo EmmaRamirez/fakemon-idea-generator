@@ -8,8 +8,12 @@ var fakemon_1 = require("./fakemon");
     function choose(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
     }
-    function bindElement(query, event, f) {
-        document.querySelector(query).addEventListener(event, f());
+    function bindElement(node, eventType, callback) {
+        var el = document.querySelector(node);
+        el.addEventListener(eventType, function (event) {
+            console.log(callback);
+            return callback();
+        });
     }
     function createFakemon() {
         var fakemonType1, fakemonType2;

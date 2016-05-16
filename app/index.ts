@@ -11,8 +11,12 @@ import Fakemon from "./fakemon";
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  function bindElement(query:string, event:string, f:Function):void {
-    document.querySelector(query).addEventListener(event, f());
+  function bindElement(node:string, eventType:string, callback:Function) {
+    let el = <HTMLElement>document.querySelector(node);
+    el.addEventListener(eventType, function( event ) {
+      console.log(callback)
+      return callback();
+    });
   }
 
   function createFakemon():Fakemon {
