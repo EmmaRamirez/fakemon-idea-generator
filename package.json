@@ -1,0 +1,20 @@
+{
+  "name": "fakemon-idea-generator",
+  "version": "1.0.0",
+  "description": "Generates a random fake Pokemon idea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaRamirez/fakemon-idea-generator.git"
+  },
+  "keywords": ["pokemon", "fakemon", "generator"],
+  "author": "Emma Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmaRamirez/fakemon-idea-generator/issues"
+  },
+  "homepage": "https://github.com/EmmaRamirez/fakemon-idea-generator#readme"
+}
