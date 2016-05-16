@@ -4,17 +4,26 @@
   "description": "Generates a random fake Pokemon idea",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "css": "node-sass styles/sass/ --output styles/css/ --watch --output-style expanded"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EmmaRamirez/fakemon-idea-generator.git"
   },
-  "keywords": ["pokemon", "fakemon", "generator"],
+  "keywords": [
+    "pokemon",
+    "fakemon",
+    "generator"
+  ],
   "author": "Emma Ramirez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EmmaRamirez/fakemon-idea-generator/issues"
   },
-  "homepage": "https://github.com/EmmaRamirez/fakemon-idea-generator#readme"
+  "homepage": "https://github.com/EmmaRamirez/fakemon-idea-generator#readme",
+  "dependencies": {
+    "ts-loader": "^0.8.2"
+  }
 }
