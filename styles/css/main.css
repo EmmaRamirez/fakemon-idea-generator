@@ -431,7 +431,9 @@ footer {
 }
 
 h1 {
+  font-size: 3rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 button {
@@ -473,13 +475,17 @@ a:hover {
 }
 
 .ui.type-single {
-  border: 1px solid #222;
+  border: 1px solid #666;
 }
 
 .ui.type1, .ui.type2 {
-  border-color: #222;
+  border-color: #666;
   border-style: solid;
   width: 5rem;
+}
+
+.ui.height, .ui.weight {
+  border: 1px solid #666;
 }
 
 .ui.type1 {
@@ -491,6 +497,21 @@ a:hover {
   border-radius: 0 4px 4px 0;
   border-width: 1px 1px 1px 0;
   margin-left: -4px;
+}
+
+.ui.species {
+  border: 1px solid #666;
+  text-align: center;
+  text-transform: capitalize;
+  min-width: 22rem;
+}
+
+.ui.pokedex-entry {
+  border: 1px solid #666;
+  font-style: italic;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
 }
 
 footer {
