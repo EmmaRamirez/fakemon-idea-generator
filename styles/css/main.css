@@ -460,6 +460,39 @@ a:hover {
   border-bottom: 1px solid #2869D1;
 }
 
+.generated-fakemon {
+  padding: 1rem;
+}
+
+.ui {
+  background: #eee;
+  color: #222;
+  display: inline-block;
+  padding: .5rem;
+  text-align: center;
+}
+
+.ui.type-single {
+  border: 1px solid #222;
+}
+
+.ui.type1, .ui.type2 {
+  border-color: #222;
+  border-style: solid;
+  width: 5rem;
+}
+
+.ui.type1 {
+  border-radius: 4px 0 0 4px;
+  border-width: 1px 0 1px 1px;
+}
+
+.ui.type2 {
+  border-radius: 0 4px 4px 0;
+  border-width: 1px 1px 1px 0;
+  margin-left: -4px;
+}
+
 footer {
   text-align: center;
 }
