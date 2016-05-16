@@ -1,2 +1,2 @@
-!function(o){function r(t){if(e[t])return e[t].exports;var n=e[t]={exports:{},id:t,loaded:!1};return o[t].call(n.exports,n,n.exports,r),n.loaded=!0,n.exports}var e={};return r.m=o,r.c=e,r.p="",r(0)}([function(o,r){console.log("Hello")}]);
+!function(e){function n(t){if(o[t])return o[t].exports;var r=o[t]={exports:{},id:t,loaded:!1};return e[t].call(r.exports,r,r.exports,n),r.loaded=!0,r.exports}var o={};return n.m=e,n.c=o,n.p="",n(0)}([function(e,n){!function(){function e(e,n,o){document.querySelector(e).addEventListener(n,o())}e(".generate-fakemon","click",function(){console.log("Hello")})}()}]);
 //# sourceMappingURL=bundle.js.map
