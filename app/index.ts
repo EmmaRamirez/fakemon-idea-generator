@@ -3,9 +3,9 @@ import Fakemon from "./fakemon";
 (function () {
 
   let typeChoices:string[] = ['normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic', 'ice', 'dragon', 'dark', 'fairy'];
-  let speciesAdjective:string[] = ['fatigued', 'awkward', 'aerial', 'furtive', '', 'solar-powered', '', 'brutish', 'homelesss', '', 'haunted', '', '', '', 'spoon-wielding', 'coffee-drinking', 'income disparity aware', 'yuppy', 'computerized', 'destructive', 'trickster', 'elevated', 'jaundiced', 'juggalo', 'fedora-wearing', 'muppet', 'stringy', 'dead', 'dystopia', '', '', 'cruel', 'gassy', 'tiny', 'miniature', 'large', 'huge'];
-  let speciesNoun:string[] = ['leopard', 'leotard', 'watermelon', 'cat-thing', 'Pokedex', 'basketball player', 'tax collector', 'hotdog', 'narwhal', 'shrimp', 'octopus', 'squid', 'microwave oven', 'hummingbird', 'hyena', 'wolf', 'ankylosaurus', 'brontosaurus', 'pikachu rip-off', 'whale', 'catdog', 'used underwear', 'spider monkey', 'canteloupe with googly eyes', 'newspaper', 'spaghetti', 'book', 'dog', 'chihuahua', 'Jerry Seinfeld', 'knife', 'python', 'ogre', 'snail', 'slug', 'fruit bat', 'goo', 'glutton', 'apothecary', 'minister', 'farmer', 'korean war vet', 'styrofoam cup', 'fox', 'mirror', 'roadkill'];
-  let pokedexSentences:string[] = ['It lives in secrecy, far away from humans.', 'It can knock out an Indian elephant with its breath.', 'Its mother never loved it as a child.', 'It is often argued about over online imageboards.', 'It won a spelling bee in 2007.', 'It is known to get angry over nothing.', 'It lives on the ocean floor peacefully.', 'There are only 10 of them in existence.', 'It famously delcared "George Bush doesn\'t care about black people"', 'When seven of them gather, an orgy occurs.', 'Professor Oak keeps one in his basement as a sex slave.', 'It was born when an idiot abused a Fakemon Generator.', 'If you spot three of them banded together, run!', 'This Pok&eacute;mon can run at 500 miles per hour.', 'This Pok&eacute;mon can\'t even outrun a slowpoke.', 'A secret society in Johto is dedicated to this Pok&eacute;mon.', 'It simply spends its entire day trolling Digimon fans online.', 'It can breath underwater.', 'This Pok&eacute;mon has been extinct for thousands of years.', 'There are currently attempts underway to revive this extinct Pok&eacute;mon.', 'They praise the moon.', 'Their Splash attack is powerful and can knock out any foe.', 'It is known for being popular amongst celebrities.', 'It loves hugs.', 'It is spiteful towards humans.', 'It was an abandoned doll that became reanimated.', 'The milk from this Pok&eacute;mon is used for ice cream.'];
+  let speciesAdjective:string[] = ['fatigued', 'awkward', 'aerial', 'furtive', '', 'solar-powered', '', 'brutish', 'homelesss', '', 'haunted', '', '', '', 'spoon-wielding', 'income disparity aware', 'yuppy', 'computerized', 'destructive', 'trickster', 'elevated', 'jaundiced', 'juggalo', 'fedora-wearing', 'muppet', 'stringy', 'dead', 'dystopia', '', '', 'cruel', 'gassy', 'tiny', 'miniature', 'large', 'huge', 'metal', 'rails', 'shiny', 'glossy', 'freakish', 'tall', 'shimmering', 'imperial', 'mysterious', 'fiery', 'entertained', 'Indian', 'underwater', 'aquatic', 'musical', '', '', '', '', 'evil', 'dark', 'light', 'holy'];
+  let speciesNoun:string[] = ['leopard', 'leotard', 'watermelon', 'cat-thing', 'basketball player', 'tax collector', 'hotdog', 'narwhal', 'shrimp', 'octopus', 'squid', 'microwave oven', 'hummingbird', 'hyena', 'wolf', 'ankylosaurus', 'brontosaurus', 'pikachu rip-off', 'whale', 'catdog', 'used underwear', 'spider monkey', 'canteloupe with googly eyes', 'newspaper', 'spaghetti', 'book', 'dog', 'chihuahua', 'Jerry Seinfeld', 'knife', 'python', 'ogre', 'snail', 'slug', 'fruit bat', 'goo', 'glutton', 'apothecary', 'minister', 'farmer', 'korean war vet', 'styrofoam cup', 'fox', 'mirror', 'roadkill', 'robot', 'rabbit', 'igloo', 'chair', 'ladder', 'ink pen', 'cartridge', 'railgun', 'doll', 'demigod', 'goddess', 'deliverer', 'entropy', 'monster', 'idol', 'cat', 'feline', 'lion', 'elephant', 'donkey', 'zebra', 'ostrich', 'krill', 'landwhale', 'fly', 'dragonfly', 'sheep', 'ram', 'goat', 'gorrilla', 'giraffe', 'martian', 'ET'];
+  let pokedexSentences:string[] = ['It lives in secrecy, far away from humans.', 'It can knock out an Indian elephant with its breath.', 'Its mother never loved it as a child.', 'It is often argued about over online imageboards.', 'It won a spelling bee in 2007.', 'It is known to get angry over nothing.', 'It lives on the ocean floor peacefully.', 'There are only 10 of them in existence.', 'When seven of them gather, an orgy occurs.', 'Professor Oak keeps one in his basement as a sex slave.', 'It was born when an idiot abused a Fakemon Generator.', 'If you spot three of them banded together, run!', 'This Pok&eacute;mon can run at 500 miles per hour.', 'This Pok&eacute;mon can\'t even outrun a slowpoke.', 'A secret society in Johto is dedicated to this Pok&eacute;mon.', 'It simply spends its entire day trolling Digimon fans online.', 'It can breath underwater.', 'This Pok&eacute;mon has been extinct for thousands of years.', 'There are currently attempts underway to revive this extinct Pok&eacute;mon.', 'They praise the moon.', 'Their Splash attack is powerful and can knock out any foe.', 'It is known for being popular amongst celebrities.', 'It loves hugs.', 'It is spiteful towards humans.', 'It was an abandoned doll that became reanimated.', 'The milk from this Pok&eacute;mon is used for ice cream.', 'It happened one day&mdash;a Pok&eacute;mon woke up to become this boy.', 'Its skin is composed of a delicate film.'];
 
   function choose (arr:any[]):any {
     let n = Math.floor(Math.random() * arr.length);
@@ -35,8 +35,8 @@ import Fakemon from "./fakemon";
     if (fakemonType1 === fakemonType2) isFakemonSingleType = true;
     fakemonSpecAdj = choose(speciesAdjective);
     fakemonSpecNoun = choose(speciesNoun);
-    height = Math.floor(Math.random() * 250 + 10);
-    weight = Math.floor(Math.random() * 2000 + 1);
+    height = Math.floor(Math.random() * 100 + 10);
+    weight = Math.floor(Math.random() * 1000 + 10);
 
     pokedexSentence = generatePokedexSentence();
 
@@ -73,7 +73,7 @@ import Fakemon from "./fakemon";
 
   function generatePokedexSentence():string {
     let pokedexSentence = '';
-    let sentences = 3;
+    let sentences = 2;
     let sentencesArr:string[] = [];
 
     for (let i = 0; i < sentences; i++) {
