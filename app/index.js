@@ -24,7 +24,7 @@ var fakemon_1 = require("./fakemon");
         fakemonSpecAdj = choose(speciesAdjective);
         fakemonSpecNoun = choose(speciesNoun);
         height = Math.floor(Math.random() * 100 + 10);
-        weight = Math.floor(Math.random() * 1000 + 10);
+        weight = Math.floor(Math.random() * height + (height * 4));
         pokedexSentence = generatePokedexSentence();
         return new fakemon_1.default(fakemonType1, fakemonType2, isFakemonSingleType, fakemonSpecAdj + ' ' + fakemonSpecNoun, height, weight, pokedexSentence);
         //return new Fakemon(fakemonType1, fakemonType2);
