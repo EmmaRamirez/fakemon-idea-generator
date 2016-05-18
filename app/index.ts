@@ -36,7 +36,7 @@ import Fakemon from "./fakemon";
     fakemonSpecAdj = choose(speciesAdjective);
     fakemonSpecNoun = choose(speciesNoun);
     height = Math.floor(Math.random() * 100 + 10);
-    weight = Math.floor(Math.random() * 1000 + 10);
+    weight = Math.floor(Math.random() * height + (height * 4));
 
     pokedexSentence = generatePokedexSentence();
 
