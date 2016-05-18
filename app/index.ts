@@ -12,7 +12,7 @@ import Fakemon from "./fakemon";
     return arr[n];
   }
 
-  function bindElement(node:string, eventType:string, callback:Function) {
+  function bindElement(node:string, eventType:string, callback:Function):any {
     let el = <HTMLElement>document.querySelector(node);
     el.addEventListener(eventType, function( event ) {
       return callback();
@@ -87,14 +87,14 @@ import Fakemon from "./fakemon";
     return sentencesArr.join(' ');
   }
 
-  function heightToString(fakemon:Fakemon) {
+  function heightToString(fakemon:Fakemon):string {
     let heightString:string = '';
     heightString = (fakemon.height / 12).toFixed() + '\'';
     heightString += (fakemon.height % 12) + '"';
     return heightString;
   }
 
-  function outputFakemon(fakemon:Fakemon) {
+  function outputFakemon(fakemon:Fakemon):string {
     let typeUi = '';
     if (fakemon.singleType) {
       typeUi = `<div class='ui type-single'><img src='img/${fakemon.type1}.gif'></div>`;
@@ -115,7 +115,7 @@ import Fakemon from "./fakemon";
     return htmlString;
   }
 
-  function init() {
+  function init():void {
     bindElement('.generate-fakemon', 'click', function () {
       document.querySelector('.fakemon').innerHTML = outputFakemon(generateFakemon());
     });
