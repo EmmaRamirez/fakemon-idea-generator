@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/EmmaRamirez/fakemon-idea-generator#readme",
   "dependencies": {
-    "ts-loader": "^0.8.2"
+    "ts-loader": "^2.0.1"
   }
 }
